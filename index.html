@@ -5,19 +5,19 @@
         let num = Math.floor(Math.random() * 11);
        
        let gotIt = false;
-       let guess = prompt("guess a number between 1 and 10");
+       let guess = prompt("guess a number between 1 and 100");
        let numGuesses = 0;
 
 
        while(gotIt === false){
          numGuesses++;
         if(num == guess)
-       {//true tell user and break out of loop
-            //alert("Got it!");
+       {
+        alert("Got it!");
             //break ouf of loop
             gotIt - true;
        }else{//false tell user to guess again
-
+  
             if(num > guess){//higher
               guess = prompt("Higher");
 
@@ -25,10 +25,7 @@
           guess = prompt("Lower");
           
         }
-
-          //false tell user to guess again
-            //alert("Sorry!  You guessed " + guess + " and the number was " + num);
-        //alert("access denied");
+          alert("Sorry!  You guessed " + guess + " and the number was " + num);
         let guess = prompt("access denied, guess again");
           }
 
