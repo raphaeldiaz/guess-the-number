@@ -2,8 +2,8 @@
   <body>
   </h1> Guess the number!</h1>
 <script>
-        let num = Math.floor(Math.random() * 11);
-       
+        let num = Math.floor(Math.random() * 100);
+       let gotIt = false;
        let guess = prompt("guess a number between 1 and 100");
        let numGuesses = 0;
 
@@ -14,7 +14,7 @@
        {
         alert("Got it!");
             //break ouf of loop
-            gotIt - true;
+            gotIt = true;
        }else{//false tell user to guess again
   
             if(num > guess){//higher
